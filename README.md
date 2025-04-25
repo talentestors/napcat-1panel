@@ -1,7 +1,7 @@
 # NapCat-1Panel
 在1Panel面板运行NapCat
 <div align="center">
-  <img src="https://gh.spoli.cn/https://raw.githubusercontent.com/Fahaxikiii/napcat-1panel/main/img/logo.jpeg"/>
+  <img src="https://raw.githubusercontent.com/talentestors/napcat-1panel/main/img/logo.jpeg"/>
 </div>
 
 ---
@@ -28,7 +28,7 @@ install_dir=$(which 1pctl | xargs grep '^BASE_DIR=' | cut -d'=' -f2)
 
 rm -rf $install_dir/1panel/resource/apps/local/napcat-1panel-napcat
 
-git clone -b napcat https://github.com/Fahaxikiii/napcat-1panel.git "$install_dir/1panel/resource/apps/local/napcat-1panel-napcat"
+git clone -b napcat https://github.com/talentestors/napcat-1panel.git "$install_dir/1panel/resource/apps/local/napcat-1panel-napcat"
 
 if [ $? -eq 0 ]; then
     rm -rf $install_dir/1panel/resource/apps/local/napcat
@@ -71,9 +71,9 @@ install_dir=$(which 1pctl | xargs grep '^BASE_DIR=' | cut -d'=' -f2)
 rm -rf $install_dir/1panel/resource/apps/local/napcat-1panel-napcat
 
 if command -v wget > /dev/null; then
-    wget -O $install_dir/1panel/resource/apps/local/napcat-1panel-napcat.zip https://github.com/Fahaxikiii/napcat-1panel/archive/refs/heads/napcat.zip
+    wget -O $install_dir/1panel/resource/apps/local/napcat-1panel-napcat.zip https://github.com/talentestors/napcat-1panel/archive/refs/heads/napcat.zip
 elif command -v curl > /dev/null; then
-    curl -o $install_dir/1panel/resource/apps/local/napcat-1panel-napcat.zip https://github.com/Fahaxikiii/napcat-1panel/archive/refs/heads/napcat.zip
+    curl -o $install_dir/1panel/resource/apps/local/napcat-1panel-napcat.zip https://github.com/talentestors/napcat-1panel/archive/refs/heads/napcat.zip
 else
     echo "请先安装wget或curl"
     exit 1
@@ -117,5 +117,5 @@ ip addr show $(ip route | awk '/default/ {print $5}') | grep link/ether | awk '{
 ---
 ## 配置图
 <div align="center">
-  <img src="https://gh.spoli.cn/https://raw.githubusercontent.com/Fahaxikiii/napcat-1panel/main/img/config.jpeg"/>
+  <img src="https://raw.githubusercontent.com/talentestors/napcat-1panel/main/img/config.jpeg"/>
 </div>
